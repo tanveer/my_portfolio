@@ -19,7 +19,6 @@ class About extends Component {
                     around this time, I found out that Stanford’s CS193P taught by Paul Hagerty. was offering an online course on iOS development. I decide to take that class to learn from a reputed university for free! 
                     "it's mind-blowing that one can get a world-class education at no cost from the comfort of their home." This was an obvious choice for me to learn iOS and Mobile app development. 
                     The joy of making something that others could use and benefit from it is very rewarding.
-                    I continue to learn new things and improve on my skills to make the best of everything I know so far.
                     </p>
                     <hr />
 
