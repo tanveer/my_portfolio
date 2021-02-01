@@ -38,10 +38,9 @@ export class LearningResources extends Component {
     render() {
         return (
             <div>
-                <p>Resource I used in my journey</p>
                 <ul>
                 {
-                resources.map ( item => <li key={item}><a style={{color: 'blue'}} href={item.url} target="_blank">{item.tag}</a>{item.info}</li> )
+                    resources.map ( item => <li key={item}><a style={{color: 'blue'}} href={item.url} target="_blank">{item.tag}</a>{item.info}</li> )
                 }
                </ul>
             </div>

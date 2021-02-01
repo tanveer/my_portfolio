@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import LearningResources from './learning_resources'
+import { Accordion, Card } from 'react-bootstrap'
 
 var url = 'https://www.freecodecamp.org/'
 
@@ -21,8 +22,19 @@ class About extends Component {
                     The joy of making something that others could use and benefit from it is very rewarding.
                     </p>
                     <hr />
-
-                    <LearningResources />
+                    <Accordion>
+                        <Card>
+                            <Accordion.Toggle as={Card.Header} eventKey="0">
+                                Resource I used in my journey
+                            </Accordion.Toggle>
+                            <Accordion.Collapse eventKey="0">
+                                <Card.Body>
+                                    <LearningResources />
+                                </Card.Body>
+                            </Accordion.Collapse>
+                        </Card>
+                    </Accordion>
+                    
                 </div>
           </div>
           

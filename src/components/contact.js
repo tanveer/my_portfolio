@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 
 export class contact extends Component {
     state = {
@@ -10,35 +12,23 @@ export class contact extends Component {
     }
 
     render() {
-        return (    
-            <div class="w3-container">
-                <div class="3-container title" id="contact">
-                    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">CONTACT</h3>
-                </div>
+        return (  
+            <div class="fullPage" >
                 <div class="w3-container w3-content w3-padding-64" >
-                    <p class="w3-opacity w3-center"><i>Let's get in-touch</i></p>
-                    <form >
-                        <div class="w3-row w3-padding-32">
-                            <div class="col-xs-12">
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1" class="col-sm-2 control-label">Email address</label>
-                                    <div class="col-sm-8">
-                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1" class="col-sm-2 control-label">Message</label>
-                                    <div class="col-sm-8">
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-sm-offset-2 col-sm-10">
-                                    <button class="btn btn-primary" type="submit">Send</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+                <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" d="about">Contact</h3>
+                <Form>
+                    <Form.Group controlId="exampleForm.ControlInput1">
+                        <Form.Label>Email address</Form.Label>
+                        <Form.Control type="email" placeholder="name@example.com" />
+                    </Form.Group>
+
+                    <Form.Group controlId="exampleForm.ControlTextarea1">
+                        <Form.Label>Example textarea</Form.Label>
+                        <Form.Control as="textarea" rows={3} />
+                    </Form.Group>
+                    <Button type="submit">Send</Button>
+                </Form>
+            </div>
             </div>
         )
     }

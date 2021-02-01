@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './custom.css.scss'
 import './w3css.css.scss'
 import './index.css';
@@ -9,11 +9,9 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
+  <Router>
       <App />
-    </Router>
-  </React.StrictMode>,
+  </Router>,
   document.getElementById('root')
 );
 
